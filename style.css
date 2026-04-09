@@ -1,0 +1,210 @@
+/* VirtueKeeper web style sheet
+   Mirrors the in-app Franklin-era palette: Prussian Blue / Parchment / Iron Gall Ink.
+   Shared by index, privacy, terms, and support pages. */
+
+:root {
+  --color-parchment: #F1E9D2;
+  --color-fresh-parchment: #FAF6EF;
+  --color-ink: #2C2420;
+  --color-prussian: #1B4D6E;
+  --color-ochre: #C4913C;
+  --color-verdigris: #507F50;
+  --color-muted: #6b5f56;
+  --color-rule: rgba(27, 77, 110, 0.18);
+  --max-width: 42rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+header.doc-header {
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+header.doc-header .site-name {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-prussian);
+  text-decoration: none;
+}
+
+header.doc-header .site-name:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: var(--color-prussian);
+  margin: 0.5rem 0 0.25rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--color-prussian);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+a {
+  color: var(--color-prussian);
+  text-decoration: underline;
+  text-decoration-color: rgba(27, 77, 110, 0.35);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-color: var(--color-prussian);
+}
+
+.last-updated {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.doc-footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-rule);
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.doc-footer a {
+  margin-right: 1rem;
+}
+
+/* Landing page specific */
+.landing-header {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.wordmark {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  font-size: 2.75rem;
+  color: var(--color-prussian);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.landing-body {
+  padding: 2rem 0;
+}
+
+.lede {
+  font-size: 1.05rem;
+  color: var(--color-ink);
+}
+
+.franklin-quote {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--color-ink);
+  background-color: var(--color-fresh-parchment);
+  border-left: 3px solid var(--color-ochre);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.franklin-quote footer {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--color-muted);
+}
+
+.landing-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0 1rem;
+  border-top: 1px solid var(--color-rule);
+}
+
+.landing-footer {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+/* Support page specific */
+.contact-block {
+  background-color: var(--color-fresh-parchment);
+  border: 1px solid var(--color-rule);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.contact-block .email {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 1.05rem;
+  color: var(--color-prussian);
+}
